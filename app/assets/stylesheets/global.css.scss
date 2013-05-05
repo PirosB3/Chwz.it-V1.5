@@ -1,0 +1,590 @@
+.alert {
+  padding: 10px;
+}
+
+.field_with_errors > textarea {
+  border: 1px solid #b94a48;
+}
+
+.field_with_errors > input {
+  border: 1px solid #b94a48;
+}
+
+.field_with_errors > select {
+  color:  #b94a48;
+}
+
+
+
+@font-face {
+  font-family: 'Lato';
+  src: url('lato-regular-webfont.eot');
+  src: url('lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('lato-regular-webfont.woff') format('woff'),
+       url('lato-regular-webfont.ttf') format('truetype'),
+       url('lato-regular-webfont.svg#latoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'Amaranth';
+  src: url('amaranth-regular-webfont.eot');
+  src: url('amaranth-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('amaranth-regular-webfont.woff') format('woff'),
+       url('amaranth-regular-webfont.ttf') format('truetype'),
+       url('amaranth-regular-webfont.svg#amaranthregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('oswald-regular-webfont.eot');
+  src: url('oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('oswald-regular-webfont.woff') format('woff'),
+       url('oswald-regular-webfont.ttf') format('truetype'),
+       url('oswald-regular-webfont.svg#oswaldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+ 
+@import "compass/css3/";
+@import "normalize";
+@import "bits";
+@import "forms";
+@import "typography";
+@import "icons";
+@import "grid";
+
+
+html { 
+  background:url('../assets/theme/bgBrokenNoise.png') repeat;
+  height: 100%;
+}
+
+
+
+
+// HEADER //
+
+.headerContainer {
+  padding: 1.5em $ContainerPadding 0 $ContainerPadding;
+}
+.logo { 
+  background: url(../assets/theme/logo.png) no-repeat;
+  float: left;
+  width: 594px; height: 127px;
+  text-indent: -100%;
+}
+
+// USER-PANE //
+
+.userPane {
+  position: relative;
+  float: right;
+  background: #fff;
+  margin: 2em 0 1.5em;
+  width: 41.6em; height: 4em;
+  @include border-radius(4px);
+  .searchContainer{ 
+    float: left;
+    position: relative;
+    padding: 1em 0 0 4.6em;
+    .iconSize {
+      position: absolute;
+      top: 0.2em;
+      left: 0.2em;
+      font-size: 2.7em;
+    }
+  }
+  .loginForm {
+    float: right;
+    position: relative;
+    padding: 1em 1em 0 0; 
+  }
+  .userGreeting {
+    position: absolute;
+    right: 8em;
+  }
+}
+
+.alert-box {
+  position: absolute;
+  top: -2.5em;
+  right: 0;
+  background: #fff;
+  z-index: 2;
+  opacity: 0.5;
+  padding: 0 0.4em;
+  @include border-radius(4px);
+}
+
+.loggedInContainer {
+  text-align: center;
+  margin: 0.6em 0 0;
+}
+
+.flashErrors {
+  right: 2em;
+  position: absolute;
+  background: #999;
+  color: #000;
+  @include border-radius(4px);
+}
+
+
+
+
+
+
+  // OTHER-PAGES //
+
+@import "peculiar";
+@import "news";
+@import "funny";
+@import "music";
+
+
+
+
+
+// NAV //
+
+
+@import "menu";
+
+
+// MAIN-BODY //
+  
+  // HOME-PAGE //
+
+.main-container {
+  padding: 0 1.5em;
+  .mainStory {
+    background: #fff;
+    padding: 1em $ContainerPadding;
+    background: #fff url(../assets/categoryIcons/newsEye.png) no-repeat;
+  }
+}
+
+// MAIN CONTENT - 1 // 
+
+article { 
+  position: relative;
+  padding: 0 0 1em 0;
+  border-bottom: 1px dotted #ccc; 
+  .iconSize {
+    font-size: 4em;
+    color: #000;
+    position: absolute;
+    top: -0.2em;
+    right: -0.7em;
+  }
+  .news-icon {
+    color: #262626;
+  } 
+  h1 {
+    @include font-stack-header;
+    margin: 0;
+    padding: 0 0 0.4em;
+  }
+  figure {
+    float: left;
+    width: 453px; height: 258px;
+    @include border-radius(8px);
+    margin: 0 1em 0 0;
+    border: 1px solid #262626;
+    padding: 0.2em;
+    background-color: #262626;
+    .youtubeIframe {
+      border: 2px solid #262626;
+      @include border-radius(8px);
+    }
+  }
+  .post-author {
+    float: left;
+    background: #000;
+    width: 36%;
+    padding: 0.5em;
+    margin: 1.4em 0 0 0.5em;
+    @include border-radius(4px);
+    address {
+      color: #fff;
+      font-size: 0.9em;
+      font-style: normal;
+    }
+  }
+}
+.mainStoryParagraph {
+  margin: 0;
+  float: right;
+  width: 37%;
+  &:first-letter {
+    font-size: 1.3em;
+  } 
+}
+
+
+
+
+// GALLERY 2 //
+
+.mainStory-galleryContainer {
+  padding: 0 0 0.2em 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.mainStory-gallery {
+  overflow: hidden;
+  margin: 1em 0 0 1em;
+}
+.mainStory-gallery-img-container {
+  float: left;
+  position: relative;
+  width: 33%;
+  padding-bottom: 20%;
+  .imgHolder {
+    position: absolute;
+    overflow: hidden;
+    width: 235px; height: 135px;
+    @include border-radius(8px);
+    border: 4px solid #282828;
+    img {
+      width: 228px; height: 128px;
+      @include transition(all 0.3s ease-in-out);
+    }
+    &:hover img {
+      width: 238px; height: 138px;
+    }
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: #fff;
+      opacity: 0;
+      font-size: 0.7em;
+      margin: 0 0 -2em;
+      @include transition(all 0.3s ease-out);
+    }
+    &:hover figcaption {
+      margin: 0 0 0;
+      background: rgba(0, 0, 0, 1);
+      opacity: 1;
+    }
+    h3 {
+      padding: 0.4em 0.4em 0;
+      line-height: 1.3;
+    }
+    .imgHolderStats {
+      text-align: right;
+      padding: 0.5em 0 0.3em 0;
+    }
+    .iconSize {
+      padding: 0 0.1em 0 0.3em;
+    }
+    .statsNumber {
+      padding: 0 0.5em 0 0;
+    }
+  } 
+}
+
+
+
+
+
+// WIDGETS 3 //
+
+.widget { 
+  @include font-stack-normalTxt;
+  background: #fff;
+  padding: 0 $ContainerPadding $ContainerPadding;
+  border-bottom: 1px dotted #ccc;
+}
+.widget-topUsers h2, .widget-topComments h2 {
+  padding: 0 0 0.4em 0;
+  font-size: 1.9em;
+  @include font-stack-header;
+}
+.widget-topUsers {
+  float: left;
+  width: 40%;
+  table { 
+    width: 85%;
+    table-layout: auto;
+  }
+  th:nth-child(1) {
+    @include border-left-radius(4px);
+    text-align: left;
+    padding: 0 0 0 0.5em;
+  }
+  th:nth-child(4) {
+    @include border-right-radius(4px);
+  }
+  th { 
+    background: #000; 
+    color: white; 
+    font-weight: bold;
+    .iconSize {
+      color: #ec5d29;
+      font-size: 1.5em;
+      padding: 0 0 0 0.1em;
+    }
+  }
+  td, th { 
+    padding: 6px; 
+    border: 0px solid #ccc; 
+    text-align: center;
+      font-size: 1.2em;
+  }
+  td:nth-child(1) {
+    text-align: left;
+    padding: 0 0 0 0.5em;
+  } 
+  td a {
+    background: #fff;
+    padding: 0 0.4em;
+    @include border-radius(4px);
+    &:hover {
+      background: #444;
+      color: #fff;
+    }
+  }
+  tbody tr {
+    td:nth-child(1) {
+      @include border-left-radius(4px);
+    }
+    td:nth-child(4) {
+      @include border-right-radius(4px);
+    }
+    &:hover {
+      background: #ccc;
+    }
+  }
+}
+
+.widget-topComments {
+  float: right;
+  width: 60%;
+  text-align: right;
+  h2 {
+    text-align: right;
+  }
+  a {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 0.4em;
+    @include border-radius(4px);
+    &:hover {
+      background: #999;
+      color: #000;
+    }
+  }
+  .topCommentsWrap {
+    width: 90%;
+    float: right;
+  }
+  .eachCommentWrap {
+    width: 100%;
+    position: relative;
+  }
+  .topCommentTxt {
+    position: absolute;
+    bottom: 2em;
+    padding: 0 7.6em 0 0;
+    float: left;
+    width: 95%;
+    p {
+      text-align: center;
+    }
+  }
+  .topCommentIMG {
+    float: right;
+    padding: 0 0.5em 0 0;
+    img {
+      @include border-radius(4px);
+      border: 3px solid #000;
+    }
+  }
+  .topCommentP {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  .topCommentAuthorDIV {
+    padding: 0.7em 0 0;
+    margin: 0;
+    height: 0;
+  }
+  .topCommentAuthor {
+    position: relative;
+    right: 4.9em;
+    bottom: 2.5em;
+    text-align: right;
+    background: #252525;
+    font-size: 0.8em;
+    color: #fff;
+    padding: 0.4em 3em;
+    width: 100%;
+    @include border-radius(4px);
+  }
+}
+
+.eachCommentContainer {
+  &:before {
+    position: relative;
+    padding: 0.03em 0.1em;
+    float: right;
+    height: 80px;
+    font-family: Arial, sans-serif;
+    font-size: 4.5em;
+    background: #262626;
+    color: #fff;
+  }
+}
+
+.eachCommentContainerOne {
+  &:before {
+    content: "1";
+  }
+}
+
+.eachCommentContainerTwo {
+  &:before {
+    content: "2";
+  }
+}
+
+.eachCommentContainerThree {
+  &:before {
+    content: "3";
+  }
+}
+
+
+
+
+// .widerComment {  //Add to longer comments
+//  width: 95%;
+// }
+
+
+
+
+
+
+
+// RIGHT-SIDEBAR //
+
+.rightSidebar {
+  background: #fff;
+  padding: 1em $ContainerPadding;
+  position: relative;
+  h2.joinUsH2 {
+    width: 90%;
+    border-bottom: 1px dotted #ccc;
+    cursor: pointer;
+    @include font-stack-header;
+  }
+  .iconSize {
+    position: absolute;
+    right: 1.4em;
+    top: 0.7em;
+    cursor: pointer;
+  }
+}
+.singleLineTxt {
+  font-size: 0.75em;
+  background: #000;
+  color: #fff;
+  padding: 0.3em;
+  text-align: center;
+  @include border-radius(4px);
+}
+.postVideo h2 {
+  font-size: 1.53em;
+  width: 90%;
+  @include font-stack-header;
+  border-bottom: 1px dotted #ccc;
+
+}
+.postVideo {
+  margin: 0.4em 0;
+}
+
+.rightSidebar {
+  margin: 0.4em 0;
+}
+
+
+
+
+// FOOTER //
+
+footer h3, h4 {
+  @include font-stack-oswald;
+}
+
+footer {
+  width: 100%;
+  padding: $ContainerPadding*2 $ContainerPadding*2 0;
+  .footerContainer {
+    padding: $ContainerPadding 0 $ContainerPadding*2;
+    background: #fff;
+  }
+  .footer-left, .footer-right {
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin: 0.5em 0 0;
+  }
+  .footer-mid {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+  a.twitter, a.facebook, a.pinterest {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-position: 0 0;
+    @include transition-property(background-position);
+    @include transition-duration(0.2s);
+  }
+  a.twitter {
+    background: url('../assets/theme/social-twitter.png') no-repeat;
+  }
+  a.facebook {
+    background: url('../assets/theme/social-facebook.png') no-repeat;
+  }
+  a.pinterest {
+    background: url('../assets/theme/social-pinterest.png') no-repeat;
+  }
+  a.twitter:hover {
+    background: url('../assets/theme/social-twitter.png') 100% 0 no-repeat;
+    background-position: 0 100%;
+  }
+  a.facebook:hover {
+    background: url('../assets/theme/social-facebook.png') 100% 0 no-repeat;
+    background-position: 0 100%;
+  }
+  a.pinterest:hover {
+    background: url('../assets/theme/social-pinterest.png') 100% 0 no-repeat;
+    background-position: 0 100%;
+  }
+}
+
+
+
+
+

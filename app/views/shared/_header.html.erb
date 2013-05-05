@@ -1,0 +1,30 @@
+<header>
+  <div class="headerContainer group">
+    <div><%= link_to "Chwz.it", root_path, class: "logo" %></div>
+    <div class="flashErrors">
+      <% flash.each do |key, value| %>
+          <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+      <% end %>
+    </div>
+    <div class="userPane userPaneWidth group">
+      <div class="searchContainer">
+        <span class="iconSize search-icon" data-icon="&#xe007;"></span>
+        <form class="searchForm">
+          <input type="text" name="search" id="searchInput" class="textinput" placeholder="Search">
+          <button type="submit" id="searchButton" class="submitButton goSearch">Go</button>
+        </form>
+      </div>
+      <% if user_signed_in? %>
+            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+      <% else %>
+          <div class="loginContainer">
+            <%= form_for("user", :url => user_session_path, html: { class: "loginForm" } ) do |f| %>
+                <%= f.text_field        :email, placeholder: "Username", class: "textinput loginInput" %>
+                <%= f.password_field    :password, placeholder: "Password", class: "textinput loginPassword"  %>
+                <%= f.submit "Login",    id: "loginButton", class: "submitButton hideButton" %>
+            <% end %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</header>

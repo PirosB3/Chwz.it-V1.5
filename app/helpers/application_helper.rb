@@ -1,0 +1,32 @@
+module ApplicationHelper
+  # Returns the full title on a per-page basis.
+  def full_title(page_title)
+    base_title = "Chwz.it"
+    if page_title.empty?
+      base_title
+    else
+      "#{base_title} | #{page_title}"
+    end
+  end
+
+
+
+  # Devise forms
+  def resource_name
+    :user
+  end
+
+  def resource
+    @resource ||= User.new
+  end
+
+  def devise_mapping
+    @devise_mapping ||= Devise.mappings[:user]
+  end
+
+
+  def after_sign_in_path_for(resource)
+  redirect_to  root_url
+  end
+
+end
