@@ -68,7 +68,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/video_posts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.054421768">
+            <state line="11" column="14" selection-start="436" selection-end="436" vertical-scroll-proportion="0.5986394">
               <folding />
             </state>
           </provider>
@@ -77,7 +77,7 @@
       <file leaf-file-name="_video_post.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/video_posts/_video_post.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="-1.0">
+            <state line="10" column="0" selection-start="1" selection-end="341" vertical-scroll-proportion="-10.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +95,7 @@
       <file leaf-file-name="video_posts_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/video_posts_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
+            <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,10 +135,10 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/video_posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/video_posts/_main_post.html.erb" />
-        <option value="$PROJECT_DIR$/app/helpers/video_posts_helper.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/views/video_posts/_video_post.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/video_posts_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/video_posts/index.html.erb" />
       </list>
     </option>
@@ -786,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/video_posts_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="36" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
@@ -835,16 +828,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/video_posts_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/video_posts/_video_post.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="-1.0">
+        <state line="10" column="0" selection-start="1" selection-end="341" vertical-scroll-proportion="-10.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/video_posts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.054421768">
+        <state line="11" column="14" selection-start="436" selection-end="436" vertical-scroll-proportion="0.5986394">
           <folding />
         </state>
       </provider>
