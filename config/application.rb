@@ -51,16 +51,15 @@ module ChooseIt
     # This will create an empty whitelist of attributes available for mass-assignment for all models
     # in your app. As such, your models will need to explicitly whitelist or blacklist accessible
     # parameters by using an attr_accessible or attr_protected declaration.
-
-    config.assets.initialize_on_precompile = false
-
     config.active_record.whitelist_attributes = true
 
-    # Enable the asset pipeline
-    config.assets.enabled = false
+    # Don't fallback to assets pipeline if a precompiled asset is missed
+    config.assets.enabled = true
 
     # Autoload paths - Carlos
     config.autoload_paths += %W(#{config.root}/lib)
+
+    config.assets.initialize_on_precompile = false
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
