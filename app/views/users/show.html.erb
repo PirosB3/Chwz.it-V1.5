@@ -1,0 +1,10 @@
+<div class="mainStory">
+  <article class="group">
+    <h3><%= @user.username %>, <%= @user.email %></h1>
+      <% if @user.video_posts.any? %>
+          <h3>Video Posts <%= @user.video_posts.count %></h3>
+          <%= render @user.video_posts %>
+      <% end %>
+  </article>
+</div>
+

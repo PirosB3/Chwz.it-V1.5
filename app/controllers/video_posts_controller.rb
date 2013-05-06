@@ -13,8 +13,8 @@ class VideoPostsController < ApplicationController
       flash[:success] = "Video posted!"
       redirect_to root_path
     else
-      @feed_items = []
-      render 'static_pages/home'
+      flash[:success] = "Errors found!"
+      redirect_to root_path
     end
   end
 
@@ -23,13 +23,11 @@ class VideoPostsController < ApplicationController
     if @video_post.present?
       @video_post.destroy
     end
-    redirect_to root_path
+    redirect_back_or root_path
   end
 
 
   private
-
-
 
   def admin_user
     redirect_back_or root_path unless user_signed_in? && current_user.admin?

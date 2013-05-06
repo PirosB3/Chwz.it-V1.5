@@ -1,17 +1,11 @@
 
-
 <div>
-
   <span><%= video_post.user.username %></span>
   <span><%= video_post.video_title %> </span>
   <span><%= video_post.video_description %> </span>
   <span><%= video_post.video_url %> </span>
-
   <% if signed_in? && current_user.admin? %>
-      <%= link_to "delete", video_post, method: :delete, confirm: "You sure?", title: video_post.video_title %>
+      <%= link_to "delete", video_post, method: :delete, confirm: "You sure?" %>
   <% end %>
 </div>
-
-
-
 

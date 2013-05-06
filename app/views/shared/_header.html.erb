@@ -16,8 +16,10 @@
       </div>
       <% if user_signed_in? %>
         <h3>
+          <%=link_to "#{current_user.username}", current_user %>  <%= pluralize(current_user.video_posts.count, "video post") %>
         </h3>
         <div>
+          <%= link_to "Profile",  current_user %>
           <%= link_to('Sign out', destroy_user_session_path, :method => :delete) %>
           <% if current_user.admin? %>
             <%= link_to "Users",    users_path %>
