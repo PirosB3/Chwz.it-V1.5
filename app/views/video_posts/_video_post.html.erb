@@ -8,7 +8,7 @@
   <span><%= video_post.video_url %> </span>
 
   <% if signed_in? && current_user.admin? %>
-      <%= link_to "delete", video_post, method: :delete, confirm: "You sure?" %>
+      <%= link_to "delete", video_post, method: :delete, confirm: "You sure?", title: video_post.video_title %>
   <% end %>
 </div>
 

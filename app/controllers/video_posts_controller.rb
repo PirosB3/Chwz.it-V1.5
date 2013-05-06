@@ -19,8 +19,10 @@ class VideoPostsController < ApplicationController
   end
 
   def destroy
-    @video_post = current_user.video_posts
-    @video_post.destroy
+    @video_post = VideoPost.find(params[:id])
+    if @video_post.present?
+      @video_post.destroy
+    end
     redirect_to root_path
   end
 

@@ -1,0 +1,9 @@
+<div class="mainStory">
+  <article class="group">
+    <h1>All users</h1>
+    <ul class="users">
+      <%= render @users  %>
+    </ul>
+    <%= will_paginate(@users, :renderer => 'PaginationListLinkRenderer') %>
+  </article>
+</div>
