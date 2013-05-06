@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :username
   # attr_accessible :title, :body
 
-  validates :username, presence: true, length: { maximum: 30 }
+  validates :username, presence: true, length: { maximum: 11 }
 
   has_many :video_posts, :class_name => 'VideoPost', :foreign_key => :user_id, dependent: :destroy
 

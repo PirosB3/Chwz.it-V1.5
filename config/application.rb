@@ -57,7 +57,7 @@ module ChooseIt
     config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
-    config.assets.enabled = false
+    config.assets.enabled = true
 
     # Autoload paths - Carlos
     config.autoload_paths += %W(#{config.root}/lib)

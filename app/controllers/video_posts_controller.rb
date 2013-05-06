@@ -3,6 +3,7 @@ class VideoPostsController < ApplicationController
   before_filter :admin_user,     only: :destroy
 
   def index
+    @main_post = VideoPost.first
     @video_posts = VideoPost.paginate :per_page => 6, :page => params[:page]
   end
 
@@ -16,6 +17,10 @@ class VideoPostsController < ApplicationController
       flash[:success] = "Errors found!"
       redirect_to root_path
     end
+  end
+
+  def show
+
   end
 
   def destroy
