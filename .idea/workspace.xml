@@ -68,7 +68,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/video_posts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="3" selection-start="92" selection-end="92" vertical-scroll-proportion="0.1632653">
+            <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.054421768">
               <folding />
             </state>
           </provider>
@@ -844,7 +844,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/video_posts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="92" selection-end="92" vertical-scroll-proportion="0.1632653">
+        <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.054421768">
           <folding />
         </state>
       </provider>
