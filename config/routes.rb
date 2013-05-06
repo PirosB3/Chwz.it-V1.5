@@ -3,6 +3,7 @@ ChooseIt::Application.routes.draw do
 
   devise_for :users, :controllers => {:registrations => "my_devise/registrations"}
 
+  resources :video_posts, only: [:index, :create, :destroy]
 
 
   # The priority is based upon order of creation:
@@ -54,7 +55,7 @@ ChooseIt::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'pages#home'
+  root :to => 'video_posts#index'
 
   # See how all your routes lay out with "rake routes"
 

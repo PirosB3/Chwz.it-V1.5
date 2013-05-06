@@ -1,0 +1,9 @@
+<div class="mainStory">
+  <article class="group">
+    <h1>Video Posts</h1>
+    <div class="video_posts">
+      <%= render @video_posts %>
+    </div>
+    <%= will_paginate(@video_posts, :renderer => 'PaginationListLinkRenderer') %>
+  </article>
+</div>
