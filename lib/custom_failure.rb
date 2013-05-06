@@ -3,7 +3,7 @@ class CustomFailure < Devise::FailureApp
     if warden_options[:scope] == :user
       new_user_registration_path
     else
-      new_user_registration_path
+      redirect
     end
   end
   def respond
