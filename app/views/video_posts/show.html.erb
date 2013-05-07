@@ -1,0 +1,3 @@
+<% @video_posts.each do |post|
+  <%= link_to truncate(post.content, :length => 10, :separator => '...'), user_video_post_path(@user, post) %>
+<% end %>

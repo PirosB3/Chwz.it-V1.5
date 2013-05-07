@@ -57,10 +57,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="video_posts_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="video_posts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/video_posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="38" selection-start="575" selection-end="575" vertical-scroll-proportion="-0.5096774">
+            <state line="16" column="38" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_video_post.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_video_post.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/video_posts/_video_post.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="12" selection-start="123" selection-end="123" vertical-scroll-proportion="-2.5">
+            <state line="1" column="5" selection-start="6" selection-end="6" vertical-scroll-proportion="0.045351475">
               <folding />
             </state>
           </provider>
@@ -129,9 +129,9 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/video_posts/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/video_posts/_video_post.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/devise.en.yml" />
         <option value="$PROJECT_DIR$/app/controllers/video_posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/video_posts/_video_post.html.erb" />
       </list>
     </option>
   </component>
@@ -849,16 +849,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/video_posts/_video_post.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/video_posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="12" selection-start="123" selection-end="123" vertical-scroll-proportion="-2.5">
+        <state line="16" column="38" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/video_posts_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/video_posts/_video_post.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="38" selection-start="575" selection-end="575" vertical-scroll-proportion="-0.5096774">
+        <state line="1" column="5" selection-start="6" selection-end="6" vertical-scroll-proportion="0.045351475">
           <folding />
         </state>
       </provider>
