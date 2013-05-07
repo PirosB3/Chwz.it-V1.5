@@ -73,6 +73,8 @@ uk-kendra.png: uk-kendra-63762380fdce997eb4859a448350b0aa.png
 uk-kendra/index.png: uk-kendra-63762380fdce997eb4859a448350b0aa.png
 us-dr-dre-snoop-dogg.png: us-dr-dre-snoop-dogg-43124cd9138b4789d1f5484bf1edc747.png
 us-dr-dre-snoop-dogg/index.png: us-dr-dre-snoop-dogg-43124cd9138b4789d1f5484bf1edc747.png
+application.js: application-5b8da57a5a14da5375d0a037627b6cfe.js
+application/index.js: application-5b8da57a5a14da5375d0a037627b6cfe.js
 application.css: application-3c780cfe43f78a2e2dfb5843a8f16968.css
 application/index.css: application-3c780cfe43f78a2e2dfb5843a8f16968.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map

@@ -12,7 +12,7 @@
     <file path="/routes.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367943145746" ignored="false" />
     <file path="/application.css" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367867204649" ignored="false" />
     <file path="/compass.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367781479598" ignored="false" />
-    <file path="/application.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367871416919" ignored="false" />
+    <file path="/application.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367946662672" ignored="false" />
     <file path="/20130505195443_devise_create_users.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367784291323" ignored="false" />
     <file path="$PROJECT_DIR$/../Chwz-it/Chwz.it/app/views/layouts/application.html.erb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367784951223" ignored="false" />
     <file path="/application_helper.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367842639170" ignored="false" />
@@ -103,15 +103,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/default.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="js.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,10 +112,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="62" selection-start="142" selection-end="142" vertical-scroll-proportion="0.14354067">
+            <state line="22" column="52" selection-start="564" selection-end="564" vertical-scroll-proportion="-13.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="33" selection-start="2724" selection-end="2728" vertical-scroll-proportion="0.42307693">
               <folding />
             </state>
           </provider>
@@ -151,7 +151,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/views/video_posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/_user.html.erb" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/video_posts/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -160,6 +159,7 @@
         <option value="$PROJECT_DIR$/app/views/video_posts/_video_post.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/js.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -216,6 +216,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Choose.it" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Choose.it" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Choose.it" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -840,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="72" selection-start="2695" selection-end="2695" vertical-scroll-proportion="1.7741935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/video_post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -910,13 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -926,7 +926,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="62" selection-start="142" selection-end="142" vertical-scroll-proportion="0.14354067">
+        <state line="22" column="52" selection-start="564" selection-end="564" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="33" selection-start="2724" selection-end="2728" vertical-scroll-proportion="0.42307693">
           <folding />
         </state>
       </provider>
