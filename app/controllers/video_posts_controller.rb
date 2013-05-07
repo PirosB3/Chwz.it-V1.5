@@ -14,13 +14,14 @@ class VideoPostsController < ApplicationController
       flash[:success] = "Video posted!"
       redirect_to root_path
     else
-      flash[:success] = "Errors found!"
+      flash[:success] = "Errors found! Please try again."
       redirect_to root_path
     end
   end
 
   def show
-
+    @user = User.find_by_username(params[:username])
+    @video_post = Post.find_by_id(params[:id])
   end
 
   def destroy
