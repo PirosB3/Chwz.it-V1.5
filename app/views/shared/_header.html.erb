@@ -27,13 +27,13 @@
           <%= link_to "All Posts",    video_posts_path %>
         </div>
       <% else %>
-        <div class="loginContainer">
-          <%= form_for("user", :url => user_session_path, html: { class: "loginForm" } ) do |f| %>
-            <%= f.text_field        :email, placeholder: "Username", class: "textinput loginInput" %>
-            <%= f.password_field    :password, placeholder: "Password", class: "textinput loginPassword"  %>
-            <%= f.submit "Login",    id: "loginButton", class: "submitButton hideButton" %>
-          <% end %>
-        </div>
+            <div class="loginContainer">
+              <%= form_for("user", :url => user_session_path, html: { class: "loginForm" } ) do |f| %>
+                <%= f.text_field        :email, placeholder: "Username", class: "textinput loginInput" %>
+                <%= f.password_field    :password, placeholder: "Password", class: "textinput loginPassword"  %>
+                <%= f.submit "Login",    id: "loginButton", class: "submitButton hideButton" %>
+              <% end %>
+            </div>
       <% end %>
     </div>
   </div>

@@ -3,7 +3,7 @@
   <component name="DataSourceManagerImpl" format="xml" hash="4057206494">
     <data-source source="LOCAL" name="Rails Choose.it: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="191eeff1-c43e-4092-af90-2e52193b15f5">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:Chooseit_development</jdbc-url>
+      <jdbc-url>jdbc:postgresql:Choose.it_development</jdbc-url>
       <user-name>Carlos</user-name>
       <libraries>
         <library>
@@ -16,7 +16,7 @@
     </data-source>
     <data-source source="LOCAL" name="Rails Choose.it: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="5230e320-b528-4080-8f57-307cf4687ae2">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:Chooseit_production</jdbc-url>
+      <jdbc-url>jdbc:postgresql:Choose.it_production</jdbc-url>
       <user-name>Carlos</user-name>
       <libraries>
         <library>
@@ -29,7 +29,7 @@
     </data-source>
     <data-source source="LOCAL" name="Rails Choose.it: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="8b9957dd-c5fc-449c-a985-2b6883bed071">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:Chooseit_test</jdbc-url>
+      <jdbc-url>jdbc:postgresql:Choose.it_test</jdbc-url>
       <user-name>Carlos</user-name>
       <libraries>
         <library>

@@ -15,6 +15,7 @@ class VideoPostsController < ApplicationController
       redirect_to root_path
     else
       flash[:success] = "Errors found! Please try again."
+      store_location
       redirect_to root_path
     end
   end
