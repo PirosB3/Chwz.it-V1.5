@@ -12,7 +12,7 @@
     <file path="/routes.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367943145746" ignored="false" />
     <file path="/application.css" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367867204649" ignored="false" />
     <file path="/compass.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367781479598" ignored="false" />
-    <file path="/application.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367946662672" ignored="false" />
+    <file path="/application.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367947098575" ignored="false" />
     <file path="/20130505195443_devise_create_users.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367784291323" ignored="false" />
     <file path="$PROJECT_DIR$/../Chwz-it/Chwz.it/app/views/layouts/application.html.erb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367784951223" ignored="false" />
     <file path="/application_helper.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367842639170" ignored="false" />
@@ -115,7 +115,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="52" selection-start="564" selection-end="564" vertical-scroll-proportion="-13.75">
+            <state line="8" column="58" selection-start="223" selection-end="223" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -124,7 +124,7 @@
       <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="33" selection-start="2724" selection-end="2728" vertical-scroll-proportion="0.42307693">
+            <state line="62" column="43" selection-start="2880" selection-end="2880" vertical-scroll-proportion="0.5248869">
               <folding />
             </state>
           </provider>
@@ -861,23 +861,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/video_posts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/video_posts/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="59" selection-start="151" selection-end="151" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
@@ -903,6 +889,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/video_posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="38" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
@@ -917,23 +910,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js.js">
+    <entry file="file://$PROJECT_DIR$/app/views/video_posts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="59" selection-start="151" selection-end="151" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="52" selection-start="564" selection-end="564" vertical-scroll-proportion="-13.75">
+        <state line="8" column="58" selection-start="223" selection-end="223" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/video_posts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="33" selection-start="2724" selection-end="2728" vertical-scroll-proportion="0.42307693">
+        <state line="62" column="43" selection-start="2880" selection-end="2880" vertical-scroll-proportion="0.5248869">
           <folding />
         </state>
       </provider>

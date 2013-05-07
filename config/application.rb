@@ -59,6 +59,9 @@ module ChooseIt
     # Autoload paths - Carlos
     config.autoload_paths += %W(#{config.root}/lib)
 
+    # Precompile all js
+    config.assets.precompile += %w( default.js )
+
     config.assets.initialize_on_precompile = false
 
     # Version of your assets, change this if you want to expire all your assets
