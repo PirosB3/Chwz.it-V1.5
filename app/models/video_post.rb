@@ -1,5 +1,5 @@
 class VideoPost < ActiveRecord::Base
-  attr_accessible :user_id, :video_category, :video_description, :video_title, :video_url
+  attr_accessible :user_id, :category, :video_description, :video_title, :video_url
 
   belongs_to :user, :class_name => 'User'
 
@@ -7,7 +7,7 @@ class VideoPost < ActiveRecord::Base
   validates :video_title,       presence: true
   validates :video_description, presence: true, length: { maximum: 140 }
   validates :video_url,         presence: true
-  validates :video_category,    presence: true
+  validates :category,    presence: true
 
   default_scope order: 'video_posts.created_at DESC'
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130506181130) do
+ActiveRecord::Schema.define(:version => 20130508191647) do
 
   create_table "users", :force => true do |t|
     t.string   "email",                :default => "",    :null => false
@@ -31,8 +31,13 @@ ActiveRecord::Schema.define(:version => 20130506181130) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
+  create_table "video_categories", :force => true do |t|
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "category_name"
+  end
+
   create_table "video_posts", :force => true do |t|
-    t.string   "video_category"
     t.integer  "user_id"
     t.string   "video_url"
     t.string   "video_description"
@@ -41,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20130506181130) do
     t.datetime "updated_at",        :null => false
     t.boolean  "approved"
     t.boolean  "main_post"
+    t.string   "category"
   end
 
 end
