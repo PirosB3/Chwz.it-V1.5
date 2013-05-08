@@ -16,7 +16,7 @@ module ApplicationHelper
   end
  
   def resource
-    @resource = session[:subscription] || User.new
+    @resource = session[:session] || User.new
   end
  
   def devise_mapping

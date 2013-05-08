@@ -1,9 +1,9 @@
-class VideoPostsController < ApplicationController
+class VideoPostsController < ApplicationController  
   before_filter :signed_in_user, only: :create
   before_filter :admin_user,     only: :destroy
 
   def index
-    @main_post = VideoPost.first
+    @main_post = VideoPost.where("main_post = 't'").limit(1)
     @video_posts = VideoPost.paginate :per_page => 6, :page => params[:page]
   end
 
@@ -15,14 +15,14 @@ class VideoPostsController < ApplicationController
       redirect_to root_path
     else
       flash[:success] = "Errors found! Please try again."
-      store_location
       redirect_to root_path
-    end
+    end 
   end
 
   def show
-    @user = User.find_by_username(params[:username])
-    @video_post = Post.find_by_id(params[:id])
+    @main_video_post = VideoPost.find(params[:id])
+    @gallery_video_posts = VideoPost.where("id != #{@main_video_post.id}").limit(6)
+    @gallery_pagination = VideoPost.where("id != #{@main_video_post.id}").paginate :per_page => 6, :page => params[:page]
   end
 
   def destroy
@@ -46,5 +46,7 @@ class VideoPostsController < ApplicationController
       redirect_to root_url, notice: "Please sign in."
     end
   end
+
+
 
 end

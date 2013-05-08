@@ -19,7 +19,7 @@ class MyDevise::RegistrationsController < Devise::RegistrationsController
     else
       clean_up_passwords resource
       set_flash_message :notice, :"not_saved"
-      session[:subscription] = resource
+      session[:session] = resource
       redirect_to root_path
     end
   end

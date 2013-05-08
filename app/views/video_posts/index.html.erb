@@ -1,5 +1,9 @@
 <div class="mainStory">
-  <%= main_video_post %>
+  <article class="group">
+    <% if @main_post.any? %>
+      <%= render :partial => 'main_video_post', :locals => {:main_post => @main_post.first} %>
+    <% end %>
+  </article>
   <div class="mainStory-galleryContainer">
     <div class="mainStory-gallery">
       <%= render @video_posts %>

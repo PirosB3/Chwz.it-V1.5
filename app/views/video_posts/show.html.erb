@@ -1,3 +1,11 @@
-<% @video_posts.each do |post|
-  <%= link_to truncate(post.content, :length => 10, :separator => '...'), user_video_post_path(@user, post) %>
-<% end %>
+<div class="mainStory">
+  <article class="group">
+    <%= render :partial => 'main_video_post', :locals => {:main_post => @main_video_post} %>
+  </article>
+  <div class="mainStory-galleryContainer">
+    <div class="mainStory-gallery">
+      <%= render @gallery_pagination %>
+    </div>
+    <%= will_paginate(@gallery_pagination, :renderer => 'PaginationListLinkRenderer') %>
+  </div>
+</div>
