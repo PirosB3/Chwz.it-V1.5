@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class VideoCategoryTest < ActiveSupport::TestCase
+class NewsPagesControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end

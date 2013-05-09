@@ -3,9 +3,12 @@ ChooseIt::Application.routes.draw do
   devise_for :users, :controllers => {:registrations => 'my_devise/registrations'}
   resources :video_posts, only: [:index, :create, :destroy, :show]
 
+  resources :news_pages, only: [:index, :create, :destroy, :show]
+
   match 'users/', to: 'users#index'
   match '/users/:id', :to => 'users#show',    :as => :user,         :via => :get
   match '/users/:id', :to => 'users#destroy', :as => :destroy_user, :via => :delete
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -4,11 +4,11 @@ class VideoPostsController < ApplicationController
 
   def index
     @main_post = VideoPost.where("main_post = 't'").limit(1)
-    @video_posts = VideoPost.paginate :per_page => 6, :page => params[:page]
+    post_paginate
   end
 
   def create
-    @video_posts = VideoPost.paginate :per_page => 6, :page => params[:page]
+    post_paginate
     @video_post = current_user.video_posts.build(params[:video_post])
     if @video_post.save
       flash[:success] = "Video posted!"
@@ -36,6 +36,9 @@ class VideoPostsController < ApplicationController
 
 
   private
+  def post_paginate
+    @video_posts = VideoPost.paginate :per_page => 6, :page => params[:page]
+  end
 
   def admin_user
     redirect_back_or root_path unless user_signed_in? && current_user.admin?

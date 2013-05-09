@@ -1,0 +1,11 @@
+<div class="mainStory">
+  <article class="group">
+    <%= render :partial => 'video_posts/main_video_post', :locals => {:main_post => @main_video_post} %>
+  </article>
+  <div class="mainStory-galleryContainer">
+    <div class="mainStory-gallery">
+      <%= render @gallery_pagination %>
+    </div>
+    <%= will_paginate(@gallery_pagination, :renderer => 'PaginationListLinkRenderer') %>
+  </div>
+</div>

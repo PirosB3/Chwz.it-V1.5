@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130508191647) do
+ActiveRecord::Schema.define(:version => 20130508212107) do
 
   create_table "users", :force => true do |t|
     t.string   "email",                :default => "",    :null => false
@@ -30,12 +30,6 @@ ActiveRecord::Schema.define(:version => 20130508191647) do
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
-
-  create_table "video_categories", :force => true do |t|
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-    t.string   "category_name"
-  end
 
   create_table "video_posts", :force => true do |t|
     t.integer  "user_id"

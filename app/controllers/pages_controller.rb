@@ -1,16 +1,10 @@
 class PagesController < ApplicationController
-  def home
-  end
+  def index
+    @video_categories = VideoPost.select(:category)
 
-  def peculiar
-  end
 
-  def news
-  end
 
-  def funny
-  end
+  def show
+    end 
 
-  def music
-  end
 end
