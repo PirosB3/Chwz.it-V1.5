@@ -11,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130508212107) do
+ActiveRecord::Schema.define(:version => 20130509194935) do
+
+  create_table "categories", :force => true do |t|
+    t.string   "category_name"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                :default => "",    :null => false
@@ -40,7 +46,6 @@ ActiveRecord::Schema.define(:version => 20130508212107) do
     t.datetime "updated_at",        :null => false
     t.boolean  "approved"
     t.boolean  "main_post"
-    t.string   "category"
   end
 
 end

@@ -1,8 +1,7 @@
 class NewsPagesController < ApplicationController
   def index
-
-
-    end
+    @video_categories = VideoPost.select(:category)
+ end
 
 
 
