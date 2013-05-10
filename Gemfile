@@ -8,6 +8,7 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'faker'
 gem 'will_paginate'
+gem 'simple_form'
 gem 'devise'
 
 

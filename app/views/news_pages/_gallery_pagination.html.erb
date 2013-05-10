@@ -1,10 +1,1 @@
 
-<div>
-  <span><%= video_categories.user.username %></span>
-  <span><%= link_to video_categories.video_title, video_categories %> </span>
-  <span><%= video_categories.video_description %> </span>
-  <span><%= video_categories.video_url %> </span>
-    <% if signed_in? && current_user.admin? %>
-        <%= link_to "delete", video_categories, method: :delete, confirm: "You sure?" %>
-    <% end %>
-</div>
