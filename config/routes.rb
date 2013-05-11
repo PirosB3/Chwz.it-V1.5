@@ -2,8 +2,8 @@ ChooseIt::Application.routes.draw do
 
   devise_for :users, :controllers => {:registrations => 'my_devise/registrations'}
   resources :video_posts, only: [:index, :create, :destroy, :show]
-
   resources :news_pages, only: [:index, :create, :destroy, :show]
+
 
   match 'users/', to: 'users#index'
   match '/users/:id', :to => 'users#show',    :as => :user,         :via => :get

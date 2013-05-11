@@ -4,4 +4,5 @@ class Category < ActiveRecord::Base
   has_many :categorizations
   has_many :video_posts, :through => :categorizations
  
+  validates :category_name,           presence: true
 end

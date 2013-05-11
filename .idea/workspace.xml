@@ -8,15 +8,12 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pages/news.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pages/show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130510184533_create_categorization.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/functional/pages_controller_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/helpers/pages_helper_test.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Choose.it.iml" afterPath="$PROJECT_DIR$/.idea/Choose.it.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/video_posts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/video_posts/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/news_pages/_gallery_pagination.html.erb" afterPath="$PROJECT_DIR$/app/views/news_pages/_gallery_pagination.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_sidebar.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_sidebar.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/category.rb" afterPath="$PROJECT_DIR$/app/models/category.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/categorization.rb" afterPath="$PROJECT_DIR$/app/models/categorization.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/news_pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/news_pages_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/video_post.rb" afterPath="$PROJECT_DIR$/app/models/video_post.rb" />
@@ -38,7 +35,7 @@
     <file path="/application_helper.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367952559558" ignored="false" />
     <file path="/user.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367803454719" ignored="false" />
     <file path="/schema.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367786536494" ignored="false" />
-    <file path="/Dummy.txt" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1368211664119" ignored="false" />
+    <file path="/Dummy.txt" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1368277052640" ignored="false" />
     <file path="/application_controller.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367791565362" ignored="false" />
     <file path="/devise.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367792012880" ignored="false" />
     <file path="/custom_failure.rb" changelist="87b43a15-80b7-47f8-a5b4-9183748a545a" time="1367798194299" ignored="false" />
@@ -111,30 +108,33 @@
               <notes />
               <edges>
                 <edge source="User" target="VideoPost">
-                  <point x="173.5" y="-0.0" />
-                  <point x="-123.0" y="-0.0" />
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Category" target="Categorization">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
                 </edge>
                 <edge source="VideoPost" target="Category">
-                  <point x="123.0" y="-35.0" />
-                  <point x="753.0" y="123.25" />
-                  <point x="-95.0" y="-13.0" />
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
                 </edge>
-                <edge source="Categorization" target="Category">
-                  <point x="63.0" y="-0.0" />
-                  <point x="-95.0" y="13.0" />
+                <edge source="Category" target="VideoPost">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
                 </edge>
                 <edge source="VideoPost" target="Categorization">
-                  <point x="123.0" y="35.0" />
-                  <point x="-63.0" y="-0.0" />
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.8819503849443969" x="589.5" y="220.90300678952474" />
+              <settings layout="Hierarchic Group" zoom="0.8819503849443969" x="769.6653734238603" y="280.7788554801164" />
               <SelectedNodes>
                 <node>VideoPost</node>
               </SelectedNodes>
               <Categories>
-                <Category>Association fields</Category>
                 <Category>Migration fields</Category>
+                <Category>Association fields</Category>
               </Categories>
             </state>
           </provider>
@@ -286,14 +286,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -459,6 +459,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -492,13 +499,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
@@ -621,11 +621,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: Choose.it" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: Choose.it" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.db:create" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.db:create" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Production: Choose.it" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Development: Choose.it" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -686,7 +686,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26040173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26398852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16714491" sideWeight="0.6743869" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39918256" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -873,30 +873,33 @@
           <notes />
           <edges>
             <edge source="User" target="VideoPost">
-              <point x="173.5" y="-0.0" />
-              <point x="-123.0" y="-0.0" />
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Category" target="Categorization">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
             </edge>
             <edge source="VideoPost" target="Category">
-              <point x="123.0" y="-35.0" />
-              <point x="753.0" y="123.25" />
-              <point x="-95.0" y="-13.0" />
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
             </edge>
-            <edge source="Categorization" target="Category">
-              <point x="63.0" y="-0.0" />
-              <point x="-95.0" y="13.0" />
+            <edge source="Category" target="VideoPost">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
             </edge>
             <edge source="VideoPost" target="Categorization">
-              <point x="123.0" y="35.0" />
-              <point x="-63.0" y="-0.0" />
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.8819503849443969" x="589.5" y="220.90300678952474" />
+          <settings layout="Hierarchic Group" zoom="0.8819503849443969" x="769.6653734238603" y="280.7788554801164" />
           <SelectedNodes>
             <node>VideoPost</node>
           </SelectedNodes>
           <Categories>
-            <Category>Association fields</Category>
             <Category>Migration fields</Category>
+            <Category>Association fields</Category>
           </Categories>
         </state>
       </provider>

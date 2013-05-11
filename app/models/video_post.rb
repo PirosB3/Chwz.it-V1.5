@@ -1,5 +1,5 @@
 class VideoPost < ActiveRecord::Base
-  attr_accessible :user_id, :category, :video_description, :video_title, :video_url
+  attr_accessible :user_id, :video_description, :video_title, :video_url
 
   belongs_to :user, :class_name => 'User'
   has_many :categorizations
