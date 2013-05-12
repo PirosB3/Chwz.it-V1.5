@@ -1,7 +1,7 @@
 
 <%= form_for('video_post', url: video_posts_path) do |f| %>
     <%= f.text_field :video_title, placeholder: "Video Title"  %>
-    <%= f.select :category, ([[], ['Peculiar', 1], ['News',2], ['Funny',3], ['Music',4]]) %>
+    <%= f.select :category_id, options_from_collection_for_select(VideoCategory.all, :id, :category_name) %>
     <%= f.text_area :video_description, placeholder: "Description" %>
     <%= f.text_field :video_url, placeholder: "URL" %>
     <%= f.submit "Post", class: "submit" %>

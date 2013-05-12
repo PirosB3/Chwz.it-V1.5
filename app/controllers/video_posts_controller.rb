@@ -9,7 +9,15 @@ class VideoPostsController < ApplicationController
 
   def create
     @video_posts = VideoPost.paginate :per_page => 6, :page => params[:page]
-    @video_post = current_user.video_posts.build(params[:video_post])
+
+    # Mass-assign form attributes
+    @video_post = current_user.video_posts.build(
+        params[:video_post].slice('video_title', 'video_description', 'video_url')
+    )
+
+    # Fetch category and assign
+    @video_post.category = VideoCategory.find(params[:video_post][:category_id])
+
     if @video_post.save
       flash[:success] = "Video posted!"
       redirect_to root_path
